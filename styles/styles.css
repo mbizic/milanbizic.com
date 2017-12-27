@@ -10,11 +10,16 @@
   	width: 300px;
   	padding: 20px 10px 10px 10px;
   	margin-left: 35px;
+
 }
 
 .headerimage {
+	max-height: 100%;
 	max-width: 100%;
 	height: auto;
+	width: auto;
+	background-position: center;
+
 }
 
 ul {
@@ -26,10 +31,13 @@ ul {
 
 .navigation {
 	font-family: Myriad Pro;
-	display: inline;
+	display: inline-block;
+  width: 200px;
 	text-align: left;
 	padding-right: 50px;
 	font-weight: bold;
+  border: 1px solid;
+  text-align: center;
 }
 
 a {
@@ -37,12 +45,17 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+  color: coral;
+  background: alice-blue;
+}
+
 .body {
 	padding: 10px 10px 10px 10px;
 	width: 64em;
 	max-width: 100%;
 	margin: 0 auto;
-	
+
 }
 
 article {
