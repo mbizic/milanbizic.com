@@ -5,12 +5,15 @@
 .title {
 	font-family: Courier;
 	font-size: 33;
-	color: coral;
+	color: #707070;
   	height: 100px;
   	width: 300px;
   	padding: 20px 10px 10px 10px;
   	margin-left: 35px;
+}
 
+#syntax {
+  color: #996666;
 }
 
 .headerimage {
@@ -18,53 +21,6 @@
 	max-width: 100%;
 	height: auto;
 	width: auto;
-	background-position: center;
-
-}
-
-ul {
-	width: 100%;
-	border: 1px;
-	max-width: 2000px;
-	min-width: 500px;
-}
-
-.navigation {
-	font-family: Myriad Pro;
-	display: inline-block;
-  width: 200px;
-	text-align: left;
-	padding-right: 50px;
-	font-weight: bold;
-  border: 1px solid;
-  text-align: center;
-}
-
-a {
-	color: #80b8f0;
-	text-decoration: none;
-}
-
-a:hover {
-  color: coral;
-  background: alice-blue;
-}
-
-.body {
-	padding: 10px 10px 10px 10px;
-	width: 64em;
-	max-width: 100%;
-	margin: 0 auto;
-
-}
-
-article {
-	width: 36em;
-	margin: 0 auto;
-	max-width: 100%;
-	line-height: 1.5;
-	font-family: roboto-slab;
-	font-size: 18px;
 }
 
 @media only screen and (max-width: 320px) {
