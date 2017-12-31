@@ -2,14 +2,22 @@
   box-sizing: border-box;
 }
 
+.container {
+  grid-template: repeat(8, 200px) / repeat(6, 100px);
+}
+
 .title {
+  grid-area: 1 / 9;
 	font-family: Courier;
 	font-size: 33;
-	color: #707070;
-  	height: 100px;
-  	width: 300px;
-  	padding: 20px 10px 10px 10px;
-  	margin-left: 35px;
+  color: #707070;
+  position: relative;
+  height: 100px;
+  width: 300px;
+  padding: 20px 10px 10px 10px;
+  text-align: right;
+  display: inline-block;
+  z-index: 1;
 }
 
 #syntax {
@@ -21,6 +29,14 @@
 	max-width: 100%;
 	height: auto;
 	width: auto;
+  position: absolute;
+  z-index: 0;
+}
+
+.body {
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 320px) {
