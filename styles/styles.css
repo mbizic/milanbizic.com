@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  grid-template: repeat(8, 200px) / repeat(6, 100px);
-}
-
 .title {
   grid-area: 1 / 9;
 	font-family: Courier;
@@ -18,6 +14,27 @@
   text-align: right;
   display: inline-block;
   z-index: 1;
+  float: right;
+  right: 100px;
+  top: -10px;
+}
+
+.navbar {
+  background-color: rgba(102, 153, 153, 0.95);
+  position: relative;
+  float: left;
+  z-index: 1;
+  height: 1000px;
+  width: 165px;
+}
+
+.navigation {
+  float: left;
+  z-index: 1;
+  display: table-cell;
+  position: relative;
+  text-decoration: none;
+  background-color: hsl(180, 33%, 60%, 95%);
 }
 
 #syntax {
@@ -37,6 +54,10 @@
   display: block;
   position: relative;
   z-index: 1;
+}
+
+li {
+  display: block;
 }
 
 @media only screen and (max-width: 320px) {
