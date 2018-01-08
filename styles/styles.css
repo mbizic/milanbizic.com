@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .title {
   grid-area: 1 / 9;
 	font-family: Courier;
@@ -21,11 +26,12 @@
 
 .navbar {
   background-color: rgba(102, 153, 153, 0.95);
-  position: relative;
+  position: fixed;
   float: left;
+  left: 0px;
   z-index: 1;
-  height: 2000px;
-  width: 165px;
+  height: 100%;
+  width: 10%;
   font-family: "Avenir Next Condensed";
   font-weight: bold;
   text-transform: uppercase;
@@ -43,12 +49,14 @@
   position: absolute;
   float: left;
   top: 400px;
+  left: 35px;
 }
 
 .nav_blog {
   position: absolute;
   float: left;
   top: 600px;
+  left: 60px;
 }
 
 #syntax {
@@ -68,6 +76,13 @@
   display: block;
   position: relative;
   z-index: 1;
+  margin-left: 700px;
+  top: 600px;
+  font-family: "Palatino";
+  font-size: 22px;
+  max-width: 40%;
+  border-left: 1px solid #707070;
+  padding-left: 20px;
 }
 
 li {
@@ -77,6 +92,10 @@ li {
 a {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+a:hover {
+  color: #996666;
 }
 
 @media only screen and (max-width: 320px) {
